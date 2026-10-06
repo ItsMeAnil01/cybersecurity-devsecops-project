@@ -1,7 +1,4 @@
-import os
+import getpass
 
-password = "admin123"
-user_input = input("Enter command: ")
-os.system(user_input)
-
-print("Password:", password)
+password = getpass.getpass("Enter password: ")
+print("Password received securely.")
